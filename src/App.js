@@ -6,37 +6,37 @@ class App extends Component {
   state = {};
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        movieData: [
-          {
-            title: 'Batman Begins',
-            poster: 'https://dummyimage.com/150x200/ff7373/fff'
-          },
-          {
-            title: 'Batman Dark Knight',
-            poster: 'https://dummyimage.com/150x200/ffc952/fff'
-          },
-          {
-            title: 'Batman Rises',
-            poster: 'https://dummyimage.com/150x200/47b8e0/fff'
-          },
-          {
-            title: 'John Wick',
-            poster: 'https://dummyimage.com/150x200/ff7373/fff'
-          }
-        ]
-      });
-    }, 2000);
+    this._getMovies();
   }
 
   _renderMovies() {
-    const movies = this.state.movieData.map((movie, index) => {
+    const movies = this.state.movieData.map(movie => {
       return (
-        <MovieCard key={index} poster={movie.poster} title={movie.title} />
+        <MovieCard
+          key={movie.id}
+          poster={movie.medium_cover_image}
+          title={movie.title_english}
+        />
       );
     });
     return movies;
+  }
+
+  async _getMovies() {
+    const movieData = await this._callApi();
+
+    this.setState({
+      movieData: movieData
+    });
+  }
+
+  _callApi() {
+    return fetch(
+      'https://yts.lt/api/v2/list_movies.json?sort_by=download_count'
+    )
+      .then(response => response.json())
+      .then(json => json.data.movies)
+      .catch(err => console.log(err));
   }
 
   render() {

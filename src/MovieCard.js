@@ -6,7 +6,7 @@ function MovieCard({ poster, title }) {
   return (
     <div className="Movie__Card">
       <MoviePoster poster={poster} />
-      <h2>{title}</h2>
+      <h2>{title.length > 15 ? `${title.substring(0, 15)}...` : title}</h2>
     </div>
   );
 }
