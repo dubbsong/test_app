@@ -9,7 +9,7 @@ Learning React and ES6 by building a Movie App.
 - [x] Set PropTypes
 - [x] Test Lifecycle
 - [x] Set State
-- [] Set Stateless Component
+- [x] Set Stateless Component
 - [] Set AJAX Networking
 - [] Update Component
 - [] Styling CSS
