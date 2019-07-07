@@ -7,8 +7,8 @@ Learning React and ES6 by building a Movie App.
 - [x] Set Props
 - [x] Maping
 - [x] Set PropTypes
-- [] Test Lifecycle
-- [] Set State
+- [x] Test Lifecycle
+- [x] Set State
 - [] Set Stateless Component
 - [] Set AJAX Networking
 - [] Update Component
