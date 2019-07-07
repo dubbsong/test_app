@@ -3,8 +3,8 @@ Learning React and ES6 by building a Movie App.
 
 
 ## Todo
-- [] Add MovieCard Component
-- [] Set Props
+- [x] Add Components
+- [x] Set Props
 - [] Maping
 - [] Set PropTypes
 - [] Test Lifecycle
