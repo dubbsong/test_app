@@ -2,8 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  text-align: center;
+  font-size: 14px;
   padding: 50px;
+  height: 100%;
 }
 
 .App__Loading {

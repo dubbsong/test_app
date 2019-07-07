@@ -11,6 +11,6 @@ Learning React and ES6 by building a Movie App.
 - [x] Set State
 - [x] Set Stateless Component
 - [x] Set AJAX Networking
-- [] Update Component
-- [] Styling CSS
+- [x] Update Component
+- [x] Styling CSS
 - [] Deploying
