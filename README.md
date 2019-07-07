@@ -1,6 +1,7 @@
 # Movie App
 Learning React and ES6 by building a Movie App.
 
+
 ## Todo
 - [] Add MovieCard Component
 - [] Set Props
